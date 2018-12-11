@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:gravity="center_vertical">
+    
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_document"
+        android:id="@+id/note_list_item_icon"
+        />
+
+    <TextView
+        android:id="@+id/note_list_item_textView"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@+id/note_list_item_icon"
+        android:layout_toEndOf="@+id/note_list_item_icon"
+        android:singleLine="true"
+        android:text="dummmy"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/note_list_item_textView"
+        android:text="4th October"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/note_list_item_textView"
+        android:id="@+id/note_list_item_creation_date"
+        android:layout_marginLeft="6dp"
+        />
+
+</RelativeLayout>
